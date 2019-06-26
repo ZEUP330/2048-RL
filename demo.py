@@ -8,7 +8,7 @@ game = Game2048Env()
 obs = game.reset()
 print("state space number:", game.observation_space.shape[0])
 print("type of action:", game.action_space)
-# game.render()
+#game.render()
 MEMORY_CAPACITY = 30000
 brain = DeepQ(batch=64, lr=0.0001, memory_capacity=MEMORY_CAPACITY,
               n_states=game.observation_space.shape[0],

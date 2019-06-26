@@ -22,7 +22,7 @@ if __name__ == "__main__":
         obs = obs['observation'].copy()
         print("target_Position:", Box_position)
         print("ender_Position:", EnderPosition)
-        action = [0, 0, i/MAX_EP_STEPS, 0]  # [向前 ,向左 ,向上 ,未知 ]
+        action = [0, 0, 0, -i/MAX_EP_STEPS]  # [向前 ,向左 ,向上 ,未知 ]
         obs_, r, info, next_state = env.step(action)
         obs = obs_.copy()
 

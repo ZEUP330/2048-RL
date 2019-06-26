@@ -22,11 +22,11 @@ class Net(nn.Module):
         ]))
 
         self.full_connect = nn.Sequential(OrderedDict([
-            ('fc1', nn.Linear(self.n_state, 256)),
-            ('fc2', nn.Linear(256, 256)),
-            ('fc3', nn.Linear(256, self.n_action)),
+            ('fc1', nn.Linear(self.n_state, 64)),
+            ('fc2', nn.Linear(64, 64)),
+            ('fc3', nn.Linear(64, self.n_action)),
         ]))
 
     def forward(self, x):
-        # return self.full_convolution(x).reshape(-1, self.n_action)
-        return self.full_connect(x.reshape(-1, self.n_state))
+        return self.full_convolution(x).reshape(-1, self.n_action)
+        # return self.full_connect(x.reshape(-1, self.n_state))

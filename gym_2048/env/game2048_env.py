@@ -78,7 +78,7 @@ class Game2048Env(gym.Env):
             done = False
             reward = self.illegal_move_reward
 
-        # print("Am I done? {}".format(done))
+        #print("Am I done? {}".format(done))
         observation = self.Matrix.flatten()
         info = dict()
         return observation, reward, done, info

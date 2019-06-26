@@ -1,0 +1,125 @@
+D:\Annaconda\envs\pytorch\python.exe C:/Users/VCC/Desktop/project/2048-python/openai_fetch/checkcollision/check.py
+number of contacts 13
+contact 0
+dist 0.0007609956711303323
+geom1 0 floor
+geom2 2 head
+ Contact force on geom2 body [-2.09440789e-08  4.11075990e+01 -5.76268593e-08  2.33198806e+00
+  4.38165167e-07  1.09637473e+02]
+norm 117.11382677149113
+c_array [0. 0. 0. 0. 0. 0.]
+c_array [ 4.70748160e+01 -1.32962320e-07 -7.77331815e-01  0.00000000e+00
+  0.00000000e+00  0.00000000e+00]
+contact 1
+dist 0.0008413074316916958
+geom1 0 floor
+geom2 3 uwaist
+ Contact force on geom2 body [-2.09440789e-08  4.11075990e+01 -5.76268593e-08  2.33198806e+00
+  4.38165167e-07  1.09637473e+02]
+norm 117.11382677149113
+c_array [0. 0. 0. 0. 0. 0.]
+c_array [ 3.12813297e+01 -2.85773509e-07  7.77328204e-01  0.00000000e+00
+  0.00000000e+00  0.00000000e+00]
+contact 2
+dist 0.0008413074421382283
+geom1 0 floor
+geom2 3 uwaist
+ Contact force on geom2 body [-2.09440789e-08  4.11075990e+01 -5.76268593e-08  2.33198806e+00
+  4.38165167e-07  1.09637473e+02]
+norm 117.11382677149113
+c_array [0. 0. 0. 0. 0. 0.]
+c_array [ 3.12813276e+01 -2.85773509e-07  7.77328041e-01  0.00000000e+00
+  0.00000000e+00  0.00000000e+00]
+contact 3
+dist 0.00019041860047595144
+geom1 0 floor
+geom2 8 right_foot_cap1
+ Contact force on geom2 body [ -9.01652943 -24.82506081  -1.55435095  -1.83574472  -9.38554292
+ 106.86256552]
+norm 110.50368200880924
+c_array [0. 0. 0. 0. 0. 0.]
+c_array [21.75935006 -0.65224871  4.11828119  0.          0.          0.        ]
+contact 4
+dist 0.000562751790529406
+geom1 0 floor
+geom2 8 right_foot_cap1
+ Contact force on geom2 body [ -9.01652943 -24.82506081  -1.55435095  -1.83574472  -9.38554292
+ 106.86256552]
+norm 110.50368200880924
+c_array [0. 0. 0. 0. 0. 0.]
+c_array [11.77903045 -0.65222273  0.55718871  0.          0.          0.        ]
+contact 5
+dist -0.0001800049258804566
+geom1 0 floor
+geom2 9 right_foot_cap2
+ Contact force on geom2 body [ -9.01652943 -24.82506081  -1.55435095  -1.83574472  -9.38554292
+ 106.86256552]
+norm 110.50368200880924
+c_array [0. 0. 0. 0. 0. 0.]
+c_array [31.70580118  0.47275693  4.13548402  0.          0.          0.        ]
+contact 6
+dist -0.0005485187885399222
+geom1 0 floor
+geom2 9 right_foot_cap2
+ Contact force on geom2 body [ -9.01652943 -24.82506081  -1.55435095  -1.83574472  -9.38554292
+ 106.86256552]
+norm 110.50368200880924
+c_array [0. 0. 0. 0. 0. 0.]
+c_array [41.61838383  0.47275212  0.57461212  0.          0.          0.        ]
+contact 7
+dist 0.00019041860427426033
+geom1 0 floor
+geom2 12 left_foot_cap1
+ Contact force on geom2 body [  9.01652943 -24.82506078   1.55435096  -1.83574477   9.38554251
+ 106.86256563]
+norm 110.50368207994822
+c_array [0. 0. 0. 0. 0. 0.]
+c_array [21.75934995 -0.65224861 -4.11828086  0.          0.          0.        ]
+contact 8
+dist 0.0005627518241763316
+geom1 0 floor
+geom2 12 left_foot_cap1
+ Contact force on geom2 body [  9.01652943 -24.82506078   1.55435096  -1.83574477   9.38554251
+ 106.86256563]
+norm 110.50368207994822
+c_array [0. 0. 0. 0. 0. 0.]
+c_array [11.77902952 -0.65222263 -0.55718887  0.          0.          0.        ]
+contact 9
+dist -0.00018000494182462273
+geom1 0 floor
+geom2 13 left_foot_cap2
+ Contact force on geom2 body [  9.01652943 -24.82506078   1.55435096  -1.83574477   9.38554251
+ 106.86256563]
+norm 110.50368207994822
+c_array [0. 0. 0. 0. 0. 0.]
+c_array [31.70580162  0.47275692 -4.13548368  0.          0.          0.        ]
+contact 10
+dist -0.0005485188141201927
+geom1 0 floor
+geom2 13 left_foot_cap2
+ Contact force on geom2 body [  9.01652943 -24.82506078   1.55435096  -1.83574477   9.38554251
+ 106.86256563]
+norm 110.50368207994822
+c_array [0. 0. 0. 0. 0. 0.]
+c_array [41.61838453  0.47275211 -0.57461227  0.          0.          0.        ]
+contact 11
+dist 0.000645447230411593
+geom1 0 floor
+geom2 14 right_uarm1
+ Contact force on geom2 body [-6.75586847e+00  4.27163228e+00  2.17160830e-03  6.69983389e-01
+  1.04633581e+00  2.61363163e+01]
+norm 27.359446853325746
+c_array [0. 0. 0. 0. 0. 0.]
+c_array [26.1363163  -0.27029672 -1.21269784  0.          0.          0.        ]
+contact 12
+dist 0.0006454472299140743
+geom1 0 floor
+geom2 17 left_uarm1
+ Contact force on geom2 body [ 6.75586850e+00  4.27163230e+00 -2.17157117e-03  6.69983269e-01
+ -1.04633584e+00  2.61363163e+01]
+norm 27.359446898164947
+c_array [0. 0. 0. 0. 0. 0.]
+c_array [26.13631634 -0.27029659  1.21269783  0.          0.          0.        ]
+done
+
+Process finished with exit code 0

@@ -14,16 +14,16 @@ import time
 
 #####################  hyper parameters  ####################
 
-LR_A = 0.0001    # learning rate for actor
-LR_C = 0.0001    # learning rate for critic
-GAMMA = 0.9     # reward discount
-TAU = 0.01      # soft replacement
+LR_A = 0.001    # learning rate for actor
+LR_C = 0.001    # learning rate for critic
+GAMMA = 0.99     # reward discount
+TAU = 0.001      # soft replacement
 MEMORY_CAPACITY = 100000
-BATCH_SIZE = 640
+BATCH_SIZE = 128
 N_STATES = 3
 RENDER = False
 EPSILON = 0.9
-ENV_PARAMS = {'obs': 3, 'goal': 3, 'action': 3, 'action_max': 0.2}
+ENV_PARAMS = {'obs': 3, 'goal': 3, 'action': 4, 'action_max': 0.2}
 # ##############################  DDPG  ####################################
 
 
@@ -33,11 +33,11 @@ class ANet(nn.Module):   # ae(s)=a
         self.max_action = ENV_PARAMS['action_max']
         self.state = nn.Sequential(
             OrderedDict([
-                ('conv1', nn.Linear(ENV_PARAMS['obs'] + ENV_PARAMS['goal'], 80)),
+                ('conv1', nn.Linear(ENV_PARAMS['obs'] + ENV_PARAMS['goal'], 400)),
                 ('relu1', nn.ReLU()),
-                ('conv2', nn.Linear(80, 80)),
+                ('conv2', nn.Linear(400, 300)),
                 ('relu2', nn.ReLU()),
-                ('conv3', nn.Linear(80, ENV_PARAMS['action'])),
+                ('conv3', nn.Linear(300, ENV_PARAMS['action'])),
                 # ('tanh1', nn.Tanh())
             ]))
         for m in self.modules():
@@ -57,11 +57,11 @@ class CNet(nn.Module):
         super(CNet, self).__init__()
         self.state = nn.Sequential(
             OrderedDict([
-                ('conv1', nn.Linear(ENV_PARAMS['obs'] + ENV_PARAMS['goal'] + ENV_PARAMS['action'], 80)),
+                ('conv1', nn.Linear(ENV_PARAMS['obs'] + ENV_PARAMS['goal'] + ENV_PARAMS['action'], 400)),
                 ('relu1', nn.ReLU()),
-                ('conv2', nn.Linear(80, 80)),
+                ('conv2', nn.Linear(400, 300)),
                 ('relu2', nn.ReLU()),
-                ('conv3', nn.Linear(80, 1))
+                ('conv3', nn.Linear(300, 1))
             ]))
 
         for m in self.modules():
@@ -152,3 +152,15 @@ class DDPG(object):
             target_param.data.copy_(
                 target_param.data*(1.0 - tau) + param.data*tau
             )
+
+    def save_mode(self):
+        torch.save(self.Actor_eval, "Actor_eval.pkl")
+        torch.save(self.Actor_target, "Actor_target.pkl")
+        torch.save(self.Critic_eval, "Critic_eval.pkl")
+        torch.save(self.Critic_target, "Critic_target.pkl")
+
+    def load_mode(self):
+        self.Actor_eval = torch.load("Actor_eval.pkl")
+        self.Actor_target = torch.load("Actor_target.pkl")
+        self.Critic_eval = torch.load("Critic_eval.pkl")
+        self.Critic_target = torch.load("Critic_target.pkl")
