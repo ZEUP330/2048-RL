@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e25ed2e-cc8e-4e46-96ce-13d0df3cd948" name="Default Changelist" comment="" />
+    <list default="true" id="8e25ed2e-cc8e-4e46-96ce-13d0df3cd948" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +32,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/openai_fetch/DDPG.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
+            <state relative-caret-position="4158">
               <caret line="163" column="25" selection-start-line="163" selection-start-column="25" selection-end-line="163" selection-end-column="25" />
               <folding>
                 <element signature="e#46#58#0" expanded="true" />
@@ -46,7 +48,6 @@
               <caret line="67" column="44" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
               <folding>
                 <element signature="e#46#56#0" expanded="true" />
-                <element signature="e#352#1000#0" />
               </folding>
             </state>
           </provider>
@@ -55,7 +56,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/openai_fetch/simple_reach.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-215">
+            <state relative-caret-position="162">
               <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
@@ -108,6 +109,9 @@
       <replace>str</replace>
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -140,9 +144,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="321" />
-    <option name="y" value="163" />
-    <option name="width" value="1932" />
+    <option name="x" value="320" />
+    <option name="y" value="161" />
+    <option name="width" value="1934" />
     <option name="height" value="1165" />
   </component>
   <component name="ProjectView">
@@ -170,8 +174,9 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Mask_RCNN" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -339,6 +344,8 @@
       <workItem from="1560910187687" duration="37788000" />
       <workItem from="1561029714153" duration="2156000" />
       <workItem from="1561104682256" duration="18632000" />
+      <workItem from="1561546249090" duration="599000" />
+      <workItem from="1561549923920" duration="673000" />
     </task>
     <servers />
   </component>
@@ -375,7 +382,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120578000" />
+    <option name="totallyTimeSpent" value="121850000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -387,11 +394,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="321" y="163" width="1932" height="1165" extended-state="0" />
+    <frame x="256" y="129" width="1547" height="932" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7927461" visible="true" weight="0.22168803" />
-      <window_info id="Structure" order="1" sideWeight="0.20725389" side_tool="true" visible="true" weight="0.22168803" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.79" visible="true" weight="0.22766958" />
+      <window_info id="Structure" order="1" sideWeight="0.21" side_tool="true" visible="true" weight="0.22766958" />
       <window_info id="Favorites" order="2" sideWeight="0.50396377" side_tool="true" weight="0.22068231" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32953465" />
@@ -715,13 +722,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/openai_fetch/simple_reach.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-215">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/openai_fetch/success_example/FetchReach.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
@@ -734,11 +734,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/openai_fetch/DDPG.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
+        <state relative-caret-position="4158">
           <caret line="163" column="25" selection-start-line="163" selection-start-column="25" selection-end-line="163" selection-end-column="25" />
           <folding>
             <element signature="e#46#58#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openai_fetch/simple_reach.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
@@ -748,7 +755,6 @@
           <caret line="67" column="44" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
           <folding>
             <element signature="e#46#56#0" expanded="true" />
-            <element signature="e#352#1000#0" />
           </folding>
         </state>
       </provider>
